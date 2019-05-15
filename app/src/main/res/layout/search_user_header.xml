@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="@color/prestigeBlue"
+    android:id="@+id/header"
+    android:layout_centerHorizontal="true"
+    android:paddingRight="10dp">
+
+    <EditText
+        android:id="@+id/etSearchUser"
+        android:layout_width="match_parent"
+        android:background="#FFFFFF"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"
+        android:hint=" Search for users"
+        android:layout_toLeftOf="@+id/search_img"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+
+
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_search"
+        android:layout_alignParentRight="true"
+        android:id="@+id/searchUser_img"
+        android:layout_marginTop="5dp"
+        android:background="@color/LightBeige"
+
+        />
+</RelativeLayout>

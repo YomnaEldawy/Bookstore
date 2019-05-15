@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="offWhite">#fffde8</color>
+    <color name="LightBeige">#f7e0a3</color>
+    <color name="Simon">#f09c67</color>
+    <color name="navyBlue">#4c8492</color>
+    <color name="red">#EA2027</color>
+
+    <color name="prestigeBlue">#2f3542</color>
+    <color name="grisaille">#57606f</color>
+    <color name="bayWharf">#747d8c</color>
+    <color name="peace">#a4b0be</color>
+    <color name="grey">#ced6e0</color>
+    <color name="cityLights">#dfe4ea</color>
+    <color name="antiFlashWhite">#f1f2f6</color>
+    <color name="white">#ffffff</color>
+    <color name="goldenSand">#eccc68</color>
+</resources>

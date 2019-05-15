@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yomna.bookstore.user.authentication.register.RegisterActivity"
+
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/prestigeBlue"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/etFirstName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvRegistraion"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="23dp"
+                android:ems="10"
+                android:hint="First Name"
+                android:backgroundTint="@color/bayWharf"
+                android:textColorHint="@color/bayWharf"
+                android:textColor="@color/white"
+                android:inputType="textPersonName"
+
+                />
+
+            <EditText
+                android:id="@+id/etLastName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etFirstName"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="11dp"
+                android:ems="10"
+                android:hint="Last Name"
+                android:inputType="textPersonName"
+                android:backgroundTint="@color/bayWharf"
+                android:textColorHint="@color/bayWharf"
+                android:textColor="@color/white"
+
+                />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/etLastName"
+                android:layout_alignStart="@+id/etLastName"
+                android:layout_below="@+id/etLastName"
+                android:layout_marginTop="11dp"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:backgroundTint="@color/bayWharf"
+                android:textColorHint="@color/bayWharf"
+                android:textColor="@color/white"
+
+                />
+
+            <EditText
+                android:id="@+id/etUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/etPassword"
+                android:layout_alignStart="@+id/etPassword"
+                android:layout_below="@+id/etPassword"
+                android:layout_marginTop="13dp"
+                android:ems="10"
+                android:hint="username"
+                android:inputType="text"
+                android:backgroundTint="@color/bayWharf"
+                android:textColorHint="@color/bayWharf"
+                android:textColor="@color/white"
+
+                />
+
+            <EditText
+                android:id="@+id/etPhoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/etUsername"
+                android:layout_alignStart="@+id/etUsername"
+                android:layout_below="@+id/etUsername"
+                android:layout_marginTop="11dp"
+                android:ems="10"
+                android:hint="Phone Number"
+                android:inputType="number"
+                android:backgroundTint="@color/bayWharf"
+                android:textColorHint="@color/bayWharf"
+                android:textColor="@color/white"
+                />
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etStreetNumber"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:background="#33B5E5"
+                android:text="Register"
+                android:textColor="#000"
+                android:onClick="register"
+                android:backgroundTint="#eccc68"
+                android:textColorHint="@color/grisaille"
+                />
+
+            <TextView
+                android:id="@+id/tvRegistraion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="31dp"
+                android:fontFamily="cursive"
+                android:text="Registration"
+                android:textColor="#eccc68"
+                android:textSize="20pt"
+                android:textStyle="bold"
+                android:backgroundTint="@color/bayWharf"
+                android:textColorHint="@color/bayWharf"
+
+                />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/etPhoneNumber"
+                android:layout_alignStart="@+id/etPhoneNumber"
+                android:layout_below="@+id/etPhoneNumber"
+                android:layout_marginTop="12dp"
+                android:ems="10"
+                android:hint="E-mail Address"
+                android:inputType="textEmailAddress"
+                android:backgroundTint="@color/bayWharf"
+                android:textColorHint="@color/bayWharf"
+                android:textColor="@color/white"
+
+                />
+
+
+
+            <EditText
+                android:id="@+id/etCountry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/etEmail"
+                android:layout_alignStart="@+id/etEmail"
+                android:layout_below="@+id/etEmail"
+                android:layout_marginTop="12dp"
+                android:ems="10"
+                android:hint="Country"
+                android:inputType="textEmailAddress"
+                android:backgroundTint="@color/bayWharf"
+                android:textColorHint="@color/bayWharf"
+                android:textColor="@color/white"
+
+                />
+
+            <EditText
+                android:id="@+id/etCity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/etEmail"
+                android:layout_alignStart="@+id/etEmail"
+                android:layout_below="@+id/etCountry"
+                android:layout_marginTop="12dp"
+                android:ems="10"
+                android:hint="City"
+                android:inputType="textEmailAddress"
+                android:backgroundTint="@color/bayWharf"
+                android:textColorHint="@color/bayWharf"
+                android:textColor="@color/white"
+
+                />
+
+            <EditText
+                android:id="@+id/etStreetName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/etEmail"
+                android:layout_alignStart="@+id/etEmail"
+                android:layout_below="@+id/etCity"
+                android:layout_marginTop="12dp"
+                android:ems="10"
+                android:hint="Street Name"
+                android:inputType="textEmailAddress"
+                android:backgroundTint="@color/bayWharf"
+                android:textColorHint="@color/bayWharf"
+                android:textColor="@color/white"
+                />
+            <EditText
+                android:id="@+id/etStreetNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/etEmail"
+                android:layout_alignStart="@+id/etEmail"
+                android:layout_below="@+id/etStreetName"
+                android:layout_marginTop="12dp"
+                android:ems="10"
+                android:hint="Street Number"
+                android:inputType="number"
+                android:backgroundTint="@color/bayWharf"
+                android:textColorHint="@color/bayWharf"
+                android:textColor="@color/white"
+                />
+
+            <TextView
+                android:id="@+id/loginLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:layout_below="@id/btnRegister"
+                android:text="Already a member? Log in"
+                android:textColor="@color/cityLights"
+                android:paddingBottom="50dp"
+                android:onClick="openLogin"
+                />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/book_overview_container"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/book_cover_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/samplebookcover" />
+
+        <TextView
+            android:id="@+id/book_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/book_cover_iv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Out of the Box"
+            android:fontFamily="@font/latobold"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/book_author_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/book_title_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/latoregular"
+            android:textAlignment="center"
+            android:text="Suzanne Dudley" />
+
+        <ImageView
+            android:id="@+id/add_to_cart_iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/book_author_tv"
+            android:layout_marginTop="5dp"
+            android:src="@mipmap/ic_add_to_cart"
+            android:tint="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/price_value_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/book_author_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="129.00 EGP"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:fontFamily="@font/latobold"
+            />
+        />
+    </RelativeLayout>
+</LinearLayout>

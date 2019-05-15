@@ -1,0 +1,58 @@
+package com.example.yomna.bookstore.sideBarMenu;
+
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+
+import com.example.yomna.bookstore.FragmentHistory;
+import com.example.yomna.bookstore.R;
+import com.example.yomna.bookstore.managerOrders.showOrderedBooksFragment;
+import com.example.yomna.bookstore.user.searchUserFragment;
+
+
+public class ControlPanelFragment extends Fragment implements View.OnClickListener {
+    Button searchUserBtn;
+    Button showOrderedBooks;
+
+    public ControlPanelFragment() {
+        // Required empty public constructor
+    }
+
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        View myView = inflater.inflate(R.layout.fragment_control_panel, container, false);
+        searchUserBtn = myView.findViewById(R.id.btnSearchUser);
+        showOrderedBooks = myView.findViewById(R.id.showordered_btn);
+        showOrderedBooks.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                setFragment(new showOrderedBooksFragment());
+
+            }
+        });
+        searchUserBtn.setOnClickListener(this);
+
+        return myView;
+    }
+
+
+    @Override
+    public void onClick(View view) {
+        setFragment(new searchUserFragment());
+
+    }
+
+    public void setFragment(Fragment f) {
+        FragmentHistory fragmentsHistory = FragmentHistory.getInstance();
+        fragmentsHistory.addFragment(f);
+        FragmentTransaction fragmentTransaction = getActivity().getSupportFragmentManager().beginTransaction();
+        fragmentTransaction.replace(R.id.userAreaContent, f);
+        fragmentTransaction.commit();
+    }
+}

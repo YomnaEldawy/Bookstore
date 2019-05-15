@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".manager.tasks.ControlPanelFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="45dp">
+
+        <Button
+            android:id="@+id/btnSearchUser"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/searchU_img"
+            android:padding="5dp"
+            android:text="Search Users"
+            android:textColor="#000000"
+            />
+
+        <ImageView
+            android:id="@+id/searchU_img"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_search" />
+
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/btnSearchUser"
+            android:layout_marginTop="70dp"
+            android:padding="5dp"
+            android:text="Add New Books"
+            android:textColor="#000000"
+            tools:ignore="RtlCompat"
+            android:id="@+id/addBooks_btn"/>
+
+        <ImageView
+            android:id="@+id/add_img"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/addBooks_btn"
+            android:layout_marginTop="70dp"
+            android:layout_toStartOf="@+id/btnSearchUser"
+            android:src="@drawable/ic_add"
+            tools:ignore="RtlCompat" />
+        <Button
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/btnSearchUser"
+            android:layout_marginTop="120dp"
+            android:padding="5dp"
+            android:text="Show Ordered Books"
+            android:textColor="#000000"
+            tools:ignore="RtlCompat"
+            android:id="@+id/showordered_btn"/>
+
+        <ImageView
+            android:id="@+id/showbooks_img"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/addBooks_btn"
+            android:layout_marginTop="120dp"
+            android:layout_toStartOf="@+id/btnSearchUser"
+            android:src="@drawable/ic_list"
+            tools:ignore="RtlCompat" />
+        <Button
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/btnSearchUser"
+            android:layout_marginTop="220dp"
+            android:padding="5dp"
+            android:text="View Report of top 10 selling books "
+            android:textColor="#000000"
+            tools:ignore="RtlCompat"
+            android:id="@+id/top10_btn"/>
+
+        <ImageView
+            android:id="@+id/view_img"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/addBooks_btn"
+            android:layout_marginTop="220dp"
+            android:layout_toStartOf="@+id/btnSearchUser"
+            android:src="@drawable/ic_table"
+            tools:ignore="RtlCompat" />
+        <Button
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/btnSearchUser"
+            android:layout_marginTop="270dp"
+            android:padding="5dp"
+            android:text="View Report of top 5 customers "
+            android:textColor="#000000"
+            tools:ignore="RtlCompat"
+            android:id="@+id/top5_btn"/>
+
+        <ImageView
+            android:id="@+id/view1_img"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/addBooks_btn"
+            android:layout_marginTop="270dp"
+            android:layout_toStartOf="@+id/btnSearchUser"
+            android:src="@drawable/ic_table"
+            tools:ignore="RtlCompat" />
+        <Button
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/btnSearchUser"
+            android:layout_marginTop="170dp"
+            android:padding="5dp"
+            android:text="View Report of total sales of books "
+            android:textColor="#000000"
+            tools:ignore="RtlCompat"
+            android:id="@+id/total_btn"/>
+
+        <ImageView
+            android:id="@+id/view2_img"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/addBooks_btn"
+            android:layout_marginTop="170dp"
+            android:layout_toStartOf="@+id/btnSearchUser"
+            android:src="@drawable/ic_table"
+            tools:ignore="RtlCompat" />
+    </RelativeLayout>
+
+</FrameLayout>

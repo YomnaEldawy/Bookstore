@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="username"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true"
+        android:id="@+id/nameR"
+        android:textColor="#000"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="totalPurchases"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/purchase"
+        android:textColor="#000"
+        />
+
+</RelativeLayout>

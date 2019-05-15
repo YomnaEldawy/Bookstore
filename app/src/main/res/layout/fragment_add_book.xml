@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".manager.tasks.addBook.AddBooksFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/prestigeBlue">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvAdd"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Book Title"
+                android:inputType="textPersonName"
+                android:backgroundTint="@color/bayWharf"
+                android:textColorHint="@color/bayWharf"
+                android:textColor="@color/white"/>
+
+            <EditText
+                android:id="@+id/etISBN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etTitle"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Book ISBN"
+                android:inputType="textPersonName"
+                android:backgroundTint="@color/bayWharf"
+                android:textColorHint="@color/bayWharf"
+                android:textColor="@color/white"/>
+
+            <EditText
+                android:id="@+id/etPublicationYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/etISBN"
+                android:layout_alignStart="@+id/etISBN"
+                android:layout_below="@+id/etISBN"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Publication Year"
+                android:backgroundTint="@color/bayWharf"
+                android:textColorHint="@color/bayWharf"
+                android:textColor="@color/white"
+                />
+
+            <EditText
+                android:id="@+id/etPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/etPublicationYear"
+                android:layout_alignStart="@+id/etPublicationYear"
+                android:layout_below="@+id/etPublicationYear"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Price"
+                android:inputType="numberDecimal"
+                android:backgroundTint="@color/bayWharf"
+                android:textColorHint="@color/bayWharf"
+                android:textColor="@color/white"/>
+
+            <EditText
+                android:id="@+id/etCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/etPublicationYear"
+                android:layout_alignStart="@+id/etPublicationYear"
+                android:layout_below="@+id/etPrice"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Category"
+                android:inputType="text"
+                android:backgroundTint="@color/bayWharf"
+                android:textColorHint="@color/bayWharf"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/tvAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="31dp"
+                android:fontFamily="cursive"
+                android:text="Properties Of Book"
+                android:textColor="#eccc68"
+                android:textSize="20pt"
+                android:textStyle="bold"
+                android:backgroundTint="@color/bayWharf"
+                android:textColorHint="@color/bayWharf" />
+
+            <EditText
+                android:id="@+id/etPublisher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/etCategory"
+                android:layout_alignStart="@+id/etCategory"
+                android:layout_below="@+id/etCategory"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Publisher"
+                android:inputType="text"
+                android:backgroundTint="@color/bayWharf"
+                android:textColorHint="@color/bayWharf"
+                android:textColor="@color/white"/>
+
+
+
+            <EditText
+                android:id="@+id/etThreshold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/etPublisher"
+                android:layout_alignStart="@+id/etPublisher"
+                android:layout_below="@+id/etPublisher"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Threshold"
+                android:inputType="number"
+                android:backgroundTint="@color/bayWharf"
+                android:textColorHint="@color/bayWharf"
+                android:textColor="@color/white"/>
+
+            <EditText
+                android:id="@+id/etNoOfCopies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Number Of Copies "
+                android:layout_alignLeft="@+id/etThreshold"
+                android:layout_alignStart="@+id/etThreshold"
+                android:layout_below="@+id/etThreshold"
+                android:inputType="number"
+                android:backgroundTint="@color/bayWharf"
+                android:textColorHint="@color/bayWharf"
+                android:textColor="@color/white"/>
+
+
+
+            <EditText
+                android:id="@+id/etUrl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/etNoOfCopies"
+                android:layout_alignStart="@+id/etNoOfCopies"
+                android:layout_below="@+id/etNoOfCopies"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Book Cover Link"
+                android:inputType="textMultiLine"
+                android:backgroundTint="@color/bayWharf"
+                android:textColorHint="@color/bayWharf"
+                android:textColor="@color/white"/>
+            <EditText
+                android:id="@+id/etAuthor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/etNoOfCopies"
+                android:layout_alignStart="@+id/etNoOfCopies"
+                android:layout_below="@+id/etUrl"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Author(s)"
+                android:inputType="textMultiLine"
+                android:backgroundTint="@color/bayWharf"
+                android:textColorHint="@color/bayWharf"
+                android:textColor="@color/white"/>
+
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etAuthor"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="25dp"
+                android:gravity="center"
+                android:text="Add Book"
+                android:backgroundTint="#eccc68"
+                android:textColorHint="@color/grisaille"
+                />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>

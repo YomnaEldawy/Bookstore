@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/prestigeBlue"
+    android:id="@+id/reportHeader"
+    android:layout_centerHorizontal="true"
+    android:padding="10dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="Book ISBN"
+        android:id="@+id/isbnTV"
+        android:textColor="@color/LightBeige"
+        android:textSize="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Book Title"
+        android:textColor="@color/LightBeige"
+        android:textSize="20dp"
+        android:id="@+id/titleTV"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="Total Sales"
+        android:textSize="20dp"
+        android:textColor="@color/LightBeige"/>
+
+</RelativeLayout>

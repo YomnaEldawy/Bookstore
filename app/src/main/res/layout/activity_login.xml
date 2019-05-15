@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yomna.bookstore.user.authentication.login.LoginActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/prestigeBlue"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/etUsername"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="165dp"
+                android:drawableLeft="@drawable/ic_action_person"
+                android:drawableTint="@color/white"
+                android:hint="username"
+                android:imeOptions="flagNoExtractUi"
+                android:inputType="textPersonName"
+                android:singleLine="false"
+                android:backgroundTint="@color/peace"
+                android:textColorHint="@color/peace"
+                android:textColor="@color/white"
+                />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="230dp"
+                android:drawableLeft="@drawable/ic_action_password"
+                android:hint="password"
+                android:textColorHint="@color/peace"
+                android:inputType="textPassword"
+                android:imeOptions="flagNoExtractUi"
+                android:drawableTint="@color/white"
+                android:textSize="16dp"
+                android:backgroundTint="@color/bayWharf"
+                android:textColor="@color/white"
+                />
+
+            <Button
+                android:id="@+id/logIn_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="login"
+                android:layout_below="@+id/etPassword"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35dp"
+                android:background="#eccc68"
+                android:text="logIn"
+                android:textColor="@color/prestigeBlue" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="58dp"
+                android:fontFamily="cursive"
+                android:text="BookStore"
+                android:textColor="#eccc68"
+                android:textSize="25pt"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnRegister"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/logIn_id"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:text="Register here"
+                android:onClick="openRegister"
+                android:textColor="@color/cityLights" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

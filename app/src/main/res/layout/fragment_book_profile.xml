@@ -1,0 +1,166 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yomna.bookstore.book.BookProfileFragment"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cityLights"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/book_cover_iv"
+                android:adjustViewBounds="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="100dp"
+                android:layout_marginLeft="100dp"
+                android:src="@drawable/samplebookcover"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Out of the Box"
+                android:id="@+id/book_title_tv"
+                android:layout_below="@id/book_cover_iv"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:textAlignment="center"
+                android:fontFamily="@font/latoback"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/publisher_tv"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/book_title_tv"
+                android:layout_centerHorizontal="true"
+                android:textColor="#000"
+                android:text="Aseer Elkotob"
+                android:textAlignment="center"
+                android:fontFamily="@font/latoregular"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/book_author_tv"
+                android:layout_marginTop="10dp"
+                android:text="Suzanne Dudley"
+                android:layout_below="@id/publisher_tv"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:fontFamily="@font/latoregular"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/price_tv"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:textColor="#000"
+                android:text="100 EGP"
+                android:textSize="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/book_author_tv"
+                android:textAlignment="center"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/add_to_cart_rl"
+                android:background="@color/prestigeBlue"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/price_tv"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add to cart"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/offWhite"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/latobold"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/add_to_cart_rl"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/update_books_copies_rl"
+                android:layout_marginTop="20dp"
+                android:padding="20dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1000 Copies available"
+                    android:id="@+id/no_of_copies_tv"
+                    android:textColor="#000"
+                    android:textSize="18dp"
+                    android:layout_centerHorizontal="true"
+                    android:textAlignment="center"
+                    />
+
+                <EditText
+                    android:id="@+id/no_of_copies_et"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/no_of_copies_tv"
+                    android:layout_marginTop="10dp"
+                    android:hint="Number of copies"
+                    android:inputType="number" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/update_books_copies_btn"
+                    android:text="Update"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/no_of_copies_tv"
+                    android:layout_toRightOf="@id/no_of_copies_et"
+                    android:backgroundTint="#eccc68"
+                    />
+
+                <EditText
+                    android:id="@+id/quantity_ordered"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/no_of_copies_et"
+                    android:layout_marginTop="10dp"
+                    android:hint="Order Quantity"
+                    android:layout_alignStart="@id/no_of_copies_et"
+                    android:layout_alignEnd="@id/no_of_copies_et"
+                    android:inputType="number"
+                    android:layout_alignLeft="@id/no_of_copies_et"
+                    android:layout_alignRight="@id/no_of_copies_et" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/quantity_order_btn"
+                    android:text="Order"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/update_books_copies_btn"
+                    android:layout_toRightOf="@id/no_of_copies_et"
+                    android:backgroundTint="#eccc68"
+                    />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+</FrameLayout>
